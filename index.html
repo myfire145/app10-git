@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>app10 Proyecto final; Tutorial de DSUPE</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema1.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--  <script src="js/acciones.js"></script>  -->
+  <script src="phonegap.js"></script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+  <style>
+  .lista2 {
+	  font-size: .8em;}
+  .new {
+	  display: block;
+	  float: left;}
+  em {
+	  color: #FF0;
+	  font-weight: 300;}
+	 .num2 {
+	  color: #F00;
+	  font-weight: 300;}
+   ul {
+	   list-style:none;
+	   font-size:1.3em;}
+	ol {
+		font-size:1.3em;
+		text-align:left;}
+	ul li {
+		font-size: 1.5em;}
+	p {
+		font-size: 1.3em;}
+  </style>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+ 
+ <body>
+ 
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Tutorial para DSUPE</h1>
+   </div>
+   
+  <div>
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Desarrollar el proceso para dar solución a un programa por computadora</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Identificar y aplicar el principio de programación estructurada</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Reconocimiento del entorno de desarrollo de trabajo en DFD</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Reconocimiento del entorno de desarrollo de trabajo en PSEINT</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Reconocimiento del entorno de desarrollo de trabajo en C#</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Desarrollar procesos de estructura lineal</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Desarrollar procesos de estructura condicional</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Desarrollar procesos de estructura repetitiva</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Uso de variables tipo Array</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Convertir los programas creados en archivos ejecutables</h2>
+     </a>
+    </li>
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Datos del desarrollador</h1>
+    <div>
+     	<table>
+     		<tr>
+     			<th>Nombre: </th>
+     			<td>Ari Sabethai Villa Salas</td>
+     		</tr>
+     		<tr>
+     			<th>Grupo: </th>
+     			<td>''E''</td>
+     		</tr>
+     		<tr>
+     			<th>Semestre: </th>
+     			<td>4°</td>
+     		</tr>
+     		<tr>
+     			<th>Submódulo: </th>
+     			<td>Desarrolla Aplicaciones Móviles(DAM)</td>
+     		</tr>
+     		<tr>
+     			<th>Docente: </th>
+     			<td>José Antonio Gomez Hernandez</td>
+     		</tr>
+     	</table>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/dam1.jpg',0)"><img src="imagenes/dam.jpg" width="353" height="143" id="Image12"></a> 
+        </div>
+   </div>
+   </ul>
+   <div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cshar.jpg" alt="cshar" title="cshar" id="wows1_0"/></li>
+		<li><img src="data1/images/dam1.jpg" alt="dam1" title="dam1" id="wows1_1"/></li>
+		<li><img src="data1/images/codi.jpg" alt="codi" title="codi" id="wows1_2"/></li>
+		<li><img src="data1/images/dfd.jpg" alt="dfd" title="dfd" id="wows1_3"/></li>
+		<li><img src="data1/images/element.png" alt="element" title="element" id="wows1_4"/></li>
+		<li><img src="data1/images/dam.jpg" alt="dam" title="dam" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/for.jpg" alt="image slider" title="for" id="wows1_6"/></a></li>
+		<li><img src="data1/images/pseint.jpg" alt="pseint" title="pseint" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cshar"><span><img src="data1/tooltips/cshar.jpg" alt="cshar"/>1</span></a>
+		<a href="#" title="dam1"><span><img src="data1/tooltips/dam1.jpg" alt="dam1"/>2</span></a>
+		<a href="#" title="codi"><span><img src="data1/tooltips/codi.jpg" alt="codi"/>3</span></a>
+		<a href="#" title="dfd"><span><img src="data1/tooltips/dfd.jpg" alt="dfd"/>4</span></a>
+		<a href="#" title="element"><span><img src="data1/tooltips/element.png" alt="element"/>5</span></a>
+		<a href="#" title="dam"><span><img src="data1/tooltips/dam.jpg" alt="dam"/>6</span></a>
+		<a href="#" title="for"><span><img src="data1/tooltips/for.jpg" alt="for"/>7</span></a>
+		<a href="#" title="pseint"><span><img src="data1/tooltips/pseint.jpg" alt="pseint"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+   </div>
+   
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+     <h4>Aplicación 10</h4>
+     <h4>Ari Sabethai Villa Salas</h4>
+    </div>
+   </div>
+   
+
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desarrollar procesos para dar solución a un programa de computadora</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Identificar el problema</h1>
+       <p>Es el enunciado del problema, este debe ser claro y completo</p>
+       
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Analizar el problema</h1>
+      <p>Leer el enunciado cuantas veces sea necesario con el objetivo de saber que se requiere como solución</p> <img src="imagenes/images.jpg" width="60%" height="auto">
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Hacer el algoritmo que da solución al problema</h1>
+      <p>Sin tener dudas de lo que se requiere como solución al problema, procedemos a escribir el algoritmo</p> <img src="imagenes/algoritmo.png" width="60%" height="auto">
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Hacer el análisis de los datos</h1>
+     <img src="imagenes/analisis.jpg" width="60%" height="auto">
+      <p>Hacer cada parte que conforma al algoritmo</p>
+      <ul>
+       <li>Entrada de datos</li>
+       <li>procesos de los datos</li>
+       <li>Salida de datos</li>
+      </ul>
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Elaborar el diagrama de flujo</h1>
+      <p>Con base en nuestro algoritmo realizar un diagrama de flujo que tenga la información necesaria y hacia que dirección fluye; tanto en un boceto como en DFD</p><img src="imagenes/diahrama.png" width="60%" height="auto">
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Crear el pseudocódigo de la solución</h1>
+      <p>Base a nuestra solución de DFD pasarla a PseInt para una mejor comprensión; aqui en vez de utilizar un flujo y figuras geométricas, se utilizan palabras tales como <em>Escribir, Leer, </em>entre otros además de tener secuencia lineal de arriba a abajo</p> <img src="imagenes/pseudo.jpg" width="60%" height="auto">
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Crear el código de la solución</h1>
+      <p>Ya hecho el pseudocódigo utilizaremos Visual Studio y el lenguaje de programación de C# para crear el código que da solución al problema, utilizando las palbras clave de este lenguaje tanto para declarar, calcular e imprimir valores. Tales palabras como <em>console, write, int, double, </em>entre otras</p><img src="imagenes/codi.jpg" width="60%" height="auto">
+     </div>
+    </div>
+    </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Identificar y aplicar el principio de programación estructurada</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>La programación estructurada es una técnica para escribir programas de manera clara. Para ello se utilizan únicamente tres estructuras: secuencia, selección e iteración. <br>Solamente con estas tres estructuras se pueden escribir todos los programas y aplicaciones posibles. Si bien los lenguajes de programación tienen un mayor repertorio de estructuras de control, éstas pueden ser construidas mediante las tres básicas citadas.</p>
+     <div>
+      <img src="imagenes/interacion.png" width="30%" height="auto" class="new"><img src="imagenes/seleccion.png" width="30%" height="auto" class="new"><img src="imagenes/secuencia.png" width="30%" height="auto" class="new">
+     </div>
+    </div>
+    </div>
+    <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+   <h2>Mas información</h2>
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="https://es.wikiversity.org/wiki/T%C3%A9cnicas_de_programaci%C3%B3n/Programaci%C3%B3n_estructurada" target="_self" data-role="button">
+    <h2>Estructuras</h2>
+    </a>
+    </li>
+   </ul>
+  </div>
+ </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+ </div>
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reconocimieno del entorno de trabajo en DFD</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <h3>¿Qué es DFD?</h3>
+    <p>DFD es un software diseñado para construir y analizar algoritmos. Se pueden crear diagramas de ﬂujo de datos para la representación de algoritmos de programación estructurada a partir de las herramientas de edición. Después de haber ingresado el algoritmo representado por el diagrama, podrá ejecutarse, analizarse y depurarse en un entorno interactivo diseñado para este ﬁn.</p>
+     <p>En DFD podemos reconocer estructuras geométricas las cuales se refieren a un proceso en concreto equitativo a palabras clave en otros lenguajes o programas de testeo de código, cada variable a utilizar debe ser declarada previamente, dichas figuras se enlistan a continuación:</p>
+     <ul>
+      <li><em>Rombo</em> Nos sirve de comparación si se cumple una evaluación ó si no</li>
+      <img src="imagenes/condi.png" width="50%" height="auto">
+      <li><em>Rectángulo</em> Nos sirve tanto para declarar variables como para hacer cálculos</li>
+      <img src="imagenes/calc.png" width="50%" height="auto">
+      <li><em>Trapecio</em> Es un comando para que el usuario pueda escribir valores que ser[an guardados</li>
+      <img src="imagenes/leer.png" width="50%" height="auto">
+      <li><em>Cono horizontal</em> Sirve para imprimir (mostrar) tanto resultados como mensajes al usuario</li>
+      <img src="imagenes/imp.png" width="50%" height="auto">
+      <li><em>Elipse</em> Es lo que nos indica el Inicio y el Final de nuestro diagrama</li>
+      <img src="imagenes/inicio.png" width="50%" height="auto">
+      <li><em>Romboide</em> Es la estructura de repetición (búcle o cíclo)</li>
+      <img src="imagenes/bucl.png" width="50%" height="auto">
+     </ul>
+     </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://systemslizbeth.galeon.com/enlaces847995.html"  target="_self" data-role="button">
+    <h2>Manual DFD</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+   </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reconocimieno del entorno de trabajo en PSEINT</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <h3>¿Qué es PseInt?</h3>
+    <p>PSeInt es una herramienta para asistir a un estudiante en sus primeros pasos en programación. Mediante un simple e intuitivo pseudolenguaje en español, le permite centrar su atención en los conceptos fundamentales de la algoritmia computacional, minimizando las dificultades propias de un lenguaje y proporcionando un entorno de trabajo con numerosas ayudas y recursos didácticos.</p>
+     <p>El pseudocódigo es la representación narrativa de cada paso del algoritmo, esta narrativa obedece a la lengua nativa del programador, las variables ocupadas en nuestro algoritmo se escriben al momento de utilizarlas, a continuación un listado de las estructuras comparadas con DFD y otras nuevas</p>
+     <ul>
+     <li><em>Leer</em> es igual a el Trapecio</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/leer.png',0)"><img src="imagenes/ler.png" width="308" height="117" id="Image19"></a>
+<li><em>Escribir</em> es igual al rombo horizontal</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/imp.png',0)"><img src="imagenes/escribir.png" width="330" height="112" id="Image20"></a>
+<li><em>Proceso y FinProceso</em> son iguales a los círculos de Inicio y Fin</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/inicio.png',0)"><img src="imagenes/proceso.png" width="353" height="126" id="Image21"></a>
+<li><em>Si, entonces, sino, FinSi</em> es igual al rombo de selección</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/select.png',0)"><img src="imagenes/si.png" width="332" height="178" id="Image22"></a>
+<li><em>Mientras, Fin Mientras; Para, Hasta, con Paso, Fin Para; Repetir, Hasta Que</em> son iguales al romboide</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/bucl.png',0)"><img src="imagenes/mientras.png" width="362" height="146" id="Image23"></a>
+<li><em><-</em> es igual al rectángulo</li>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/calc.png',0)"><img src="imagenes/asign.png" width="266" height="103" id="Image24"></a>
+<li><em>Segun, Hacer, FinSegun</em> no tiene similar en DFD</li>
+     <img src="imagenes/segun.png" width="40%" height="auto">
+     </ul>
+    </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.monografias.com/trabajos-pdf5/tutorial-pseint/tutorial-pseint.shtml"  target="_self" data-role="button">
+    <h2>Manual PseInt</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+ </div>
+  
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reconocimieno del entorno de trabajo en C#</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Dentro de la aplicación VisualStudio tenemos el lenguaje de C# el cual utilizaremos para codificar nuestros algoritmos, ésta está hecha en inglés por lo cual existen palabras reservadas (en inglés) tales como <em>program, main, double, write, read, string, convert, if, else, while, do</em> entre otras; además de que tiene operadores especiales y un delimitador de líneas de código (<em>;</em>) además de tener que declarar las variables a utilizar antes de usarlas y antes de terminar los procesos deberemos de escribir una función que evite el cierre de la ejecución; ya que sin esto la visualización de los resultados es imposible. <br> A continuación un listado de las estructuras básicas</p>
+     <ul>
+      <li><em>WriteLine</em> Nos sirve para escribir un mensaje en la pantalla como el <em class="num2">Escribir </em>en PseInt</li>
+      <li><em>ReadLine</em> Hace función de guardar el valor escrito como la característica de <em class="num2">Leer</em> en PseInt</li>
+      <li><em>=</em> Sirve de comparación de elementos; calculos o declarar variables, como <em class="num2"> <- </em>en PseInt</li>
+      <li><em>If, else</em> Estructura de selección de 2 opciones cierra solo con un corchete <em class="num2">(})</em></li>
+      <li><em>While, doWhile, For</em> Son estructuras de repetición (búcle o cíclo)</li>
+      <li><em>switch, case, default, break</em> Todo conforma una estructura, la de selección en menú; cada <em class="num2">case:</em> es una opción y estas se cierran con <em class="num2">break;</em> y <em class="num2">default: </em>se selecciona automáticamente si se escribe una opción no presente en el menú de <em class="num2">case's</em></li>
+      <li><em></em> </li>
+     </ul>
+    </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1851-95042015000200006"  target="_self" data-role="button">
+    <h2>¡Quiero más!</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+ </div>
+  
+  <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desarrolla procesos de estructura lineal</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Identificar y aplicar el concepto de variable</h1>
+      <p>Es una palabra o identificador creado por el programador para asignarle valores</p><br>
+      <p>Los criterios para crear una variable son:</p>
+      <ul class="lista2">
+       <li>Tener numeros, letras ó ambos</li>
+       <li>Debe comenzar en letra</li>
+       <li>El nombre debe referenciar al valor que va a contener</li>
+      </ul>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/varia.png',0)"><img src="imagenes/vari.jpg" width="297" height="170" id="Image35"></a>     
+      </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Aplicar las variables de acuerdo a su uso</h1>
+      <ul>
+       <li>Por contenido</li>
+       <ul class="lista2">
+        <li>Numéricos</li>
+         <p>Aquellas en las cuales se almacenan valores numéricos tanto positivos (1,10,100), negativos (-1,-6,-90), flotantes(3.16,90.99)</p>
+        <li>Lógicos</li>
+        <p>Solo pueden tener 2 valores (verdadero o falso, 0 o 1, si o no) representa el resultado de una comparación entre 2 datos</p>
+        <li>Alfanumericos</li>
+        <p>Almacenan valores o información compuesta por letras, numeros y carácteres especiales</p>
+       </ul>
+       <li>Por uso</li>
+       <ul class="lista2">
+        <li>De trabajo</li>
+         <p>Reciben el resultado de una expresión aritmética parcial o completa(area_triangulo, Promedio)</p>
+        <li>Contadores</li>
+        <p>Se dice que una variable es contador si cumple ésta función: X=X+c Significa que "X" obtiene su valor actual más el valor de "c" dónde "c" es una constante ya sea positivo o negativo</p>
+        <li>Acumuladores</li>
+        <p>Se dice que una variable es acumulador si cumple ésta función: X=X+b Significa que "X" obtiene su valor actual más el valor de "b" pero ésta no tiene valor fijo</p>
+       </ul>
+      </ul>
+     </div>
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Operaciones aritméticas y su jerarquía</h1>
+     <p>La jerarquia de operaciones es la misma que en álgebra,corchetes, paréntesis (de adentro hacia afuera) potencias, raíces, división, multiplicación, suma y resta. <br>y las operaciones aritméticas se muestran en la tabla</p>
+      <p></p><img src="imagenes/aritmetica.jpg" width="40%" height="auto" class="new"><img src="imagenes/jerar.png" width="40%" height="auto" class="new">
+      </div>
+     
+    </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="https://www.youtube.com/watch?v=OXdyT0Yxn-o"  target="_self" data-role="button">
+    <h2>¡¡¡Introdúcete!!!</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desarrolla procesos de estructura condicional</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <ul>
+      <li>Elementos de expresión condicional</li>
+      <p>En la expresión se debe cumplir con un valor; por lo cual tenemos a la expresión, la serie de acciones a realizar en cada opción del condicional y el cierre del mismo </p>
+      <li>Manipular la estructura de decisión <em>If</em></li>
+      <p>En la condicional <em class="num2">if</em> existen 2 opciones; sí y no, verdadero y falso; por lo que tendremos que definir acciones a seguir, si se cumple la condición y en caso de que no se cumpliese simplemente se saltará las líneas de código dentro de <em class="num2">if</em></p>
+      <img src="imagenes/if.png" width="40%" height="auto">
+      <li>Manipular la estructura de decisión <em>If-else</em></li>
+      <p>Éste caso es similar al anterior pero con la diferencia de que aquí definiremos código si la condición se cumple  y también si no lo hace; dado el caso anterior se saltaría las lineas de "sí" y cumpliría las lineas de <em class="num2">else</em></p>
+      <img src="imagenes/if-else.png" width="40%" height="auto">
+      <li>Manipular la estructura de decisión <em>else-if</em></li>
+      <p>Aquí veremos la combinación de los 2 anteriores pues contine un inicio en <em class="num2">if</em> el cual evalúa una condición, luego tenemos <em class="num2">else if</em> este evaluará otra condicion en caso de que la primera no se cumpla y al final tenemos a <em class="num2">else</em> el cual se ejecuta cuando ninguna de las condiciones anteriores fue "verdadera"</p>   
+      <img src="imagenes/elseif.jpg" width="40%" height="auto">   
+      <li>Manipular la estructura de decisión <em>Switch</em></li>
+      <p>Damos un salto de condicional, pues éste es aún más complejo ya que comienza con su declaración y condición <em class="num2">switch(a)</em> y luego siguen los <em class="num2">case x: </em> tantos como desees y dentro de ellos se escriben las líneas a ejecutar si se elige uno de los <em class="num2">case's</em> los cuales se cierran con un <em class="num2">break; </em>. la opción <em class="num2">default: </em> se elige cuando escribimos una tecla o valor no puesto en los <em class="num2">case's</em>, éste se cierra igual que los casos</p>
+      <img src="imagenes/switch.jpg" width="40%" height="auto">
+      <li>Manipular la estructura de decisión en forma de anidamiento</li>
+      <p>Estructura de anidamiento se refiere a tener estructuras específicas dentro de otras del mismo tipo; como meter un globo dentro de otro globo, así por ejemplo podemos meter estructuras de selección (<em class="num2">if, if-else, switch</em>) dentro de otras iguales, esto nos sirve para tener mas opciones y mejor precisión en cuanto a información</p>
+      <img src="imagenes/ani1.png" width="40%" height="auto" class="new"><img src="imagenes/ani2.png" width="40%" height="auto" class="new"><img src="imagenes/anif.jpg" width="50%" height="auto" class="new">
+     </ul>
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desarrolla procesos de estructura repetitiva</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <ul>
+      <li>Manipular la estructura de repetición <em>while</em></li>
+      <p>Ésta estructura permite que se repitan las líneas de código que están dentro de <em class="num2">while </em>tantas veces mientras se cumpla una condición, cuando dicha condición se cumple el búcle termina y continúa con otras líneas, de otro modo ésta repetición es infinita. Ésta puede ejecutarse mínimo 0 veces. Se inicia con una <a href="https://desarrolloweb.com/articulos/2164.php">variable</a> generalmente son "acumuladoras" o "contadoras" para poder tener un final específico</p>
+      <li>Manipular la estructura de repetición <em>do-while</em></li>
+      <p><em class="num2">Do-while</em> similar a <em class="num2">while</em> la única diferencia es que ésta estructura se ejecuta mínimo 1 vez y que la condicón se escribe al cierre del ciclo; tanto ésta como la primera estructura sirven para disminuir código y ser más precisos, puesto que sin ellas tendriamos que repetir las mismas líneas de código varias veces y estas serían finitas, lo cual es lo contrario a lo que buscan y son las estructuras repetitivas</p>
+      <li>Manipular la estructura de repetición <em>for</em></li>
+      <p>En este caso el cíclo no se inicia si la condición no se cumple esta se inicia en <em class="num2">for(a = 0; a = 10; +2) </em><em class="num2">a</em> es la declaracion de nuestra variable contadora o acomuladora en el primer apartado (delimitado por punto y coma <em class="num2">;</em>) seguido por el valor final que debe tener para su ciclado en el segundo apartado y al final de cuanto en cuanto aumentara la variable <em class="num2">a</em>. Ósea que se repetirá 6 veces</p>
+      <li>Manipular la estructura de repetición en forma de anidamiento</li>
+      <p>Al igual que en el apartado de <a href="#Pagina7">anidamiento condicional</a> a lo que se refiere es a introcir estructuras repetitivas en otras estructuras repetitivas, esto nos sirve para hacer pequeños formularios, por ejemplo.</p>
+      
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/whilee.png" alt="whilee" title="whilee" id="wows2_0"/></li>
+		<li><img src="data2/images/while.png" alt="while" title="while" id="wows2_1"/></li>
+		<li><img src="data2/images/dowhilee.png" alt="dowhilee" title="dowhilee" id="wows2_2"/></li>
+		<li><img src="data2/images/dowhile.jpg" alt="do-while" title="do-while" id="wows2_3"/></li>
+		<li><img src="data2/images/forr.png" alt="forr" title="forr" id="wows2_4"/></li>
+		<li><img src="data2/images/for.jpg" alt="for" title="for" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/anifor2.png" alt="http://wowslider.com/" title="anifor2" id="wows2_6"/></a></li>
+		<li><img src="data2/images/anifor1.png" alt="anifor1" title="anifor1" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="whilee"><span><img src="data2/tooltips/whilee.png" alt="whilee"/>1</span></a>
+		<a href="#" title="while"><span><img src="data2/tooltips/while.png" alt="while"/>2</span></a>
+		<a href="#" title="dowhilee"><span><img src="data2/tooltips/dowhilee.png" alt="dowhilee"/>3</span></a>
+		<a href="#" title="do-while"><span><img src="data2/tooltips/dowhile.jpg" alt="do-while"/>4</span></a>
+		<a href="#" title="forr"><span><img src="data2/tooltips/forr.png" alt="forr"/>5</span></a>
+		<a href="#" title="for"><span><img src="data2/tooltips/for.jpg" alt="for"/>6</span></a>
+		<a href="#" title="anifor2"><span><img src="data2/tooltips/anifor2.png" alt="anifor2"/>7</span></a>
+		<a href="#" title="anifor1"><span><img src="data2/tooltips/anifor1.png" alt="anifor1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      
+     </ul>
+    </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://docplayer.es/42921328-Estructura-de-seleccion-y-repeticion-en-c.html"  target="_self" data-role="button">
+    <h2>¿No es suficiente?</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Uso de variables tipo Array</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Un array es un indicador que puede almacenar varios valores simultáneamente. Cada uno de estos valores se identifica mediante un número al cual se llama índice. Así, para acceder al primer elemento del array habría que usar el índice cero, para el segundo el índice uno, para el tercero el índice dos, y así sucesivamente. En el siguiente ejemplo lo comprenderemos mejor</p>
+     <img src="imagenes/array.png" width="60%" height="auto">
+     <p>En este pequeño programa hemos declarado un array y lo hemos instanciado después de haber preguntado al usuario cuántos elementos iba a tener. Utilizamos un búcle <em class="num2">for</em> para recoger todos los valores que hay que meter en el array. Hemos introducido los valores en el array: en la línea "nombres[i] = Console.ReadLine()" lo que hacemos es que al elemento "i" del array le asignamos lo que devuelva el método ReadLine. Como "i" tomará valores entre 0 y el número total de elementos menos uno rellenaremos el array completo. La condición del búcle, que es i < num, es decir, que si "i" es igual a "num" el búcle ya no se altera. Después tenemos otro búcle <em class="num2">for</em> para recorrer todo el array y escribir sus valores en la consola. En definitiva, para acceder a un elemento del array se usa la sintaxis "array[índice]".</p>
+    </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.mundonet.es/arrays-arrays-multidimensionales-arrays-de-arrays.html?Pg=Entrega11.htm"  target="_self" data-role="button">
+    <h2>¡Necesito más!</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Convertir los programas creados en archivos ejecutables</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Agregaremos un proyecto de instalación. <br> Los proyectos de instalación sirven para crear archivos de Windows Installer (.msi), que se utilizan con el fin de distribuir la aplicación para su instalación en otro equipo. Existen dos tipos de proyectos de instalación: los proyectos de instalación estándar creados por instaladores para aplicaciones Windows en un equipo de destino, y los proyectos de instalación Web creados por instaladores para aplicaciones Web en un servidor Web.</p>
+     <p>Para crear un nuevo proyecto de instalación</p>
+     <ol>
+      <li>En el menú Archivo, elija Agregar y, después, haga clic en Nuevo proyecto.</li>
+      <li>En el cuadro de diálogo Agregar nuevo proyecto resultante, en el recuadro Tipos de proyecto, abra el nodo Otros tipos de proyectos, a continuación abra Proyectos de instalación e implementación y después seleccione Instalador de Visual Studio.</li>
+      <li>En el recuadro Plantillas, elija Proyecto de instalación para una instalación estándar, o Proyecto de programa de instalación web para una aplicación web.</li>
+     </ol>
+     <p>Para agregar un proyecto de instalación existente a una solución</p>
+     <ol>
+      <li>En el menú Archivo, elija Agregar y, después, haga clic en Proyecto existente.</li>
+      <li>En el cuadro de diálogo Agregar proyecto existente, busque en la ubicación del proyecto de instalación y haga clic en Abrir.</li>
+     </ol>
+    </div>
+    <div>
+     <img src="imagenes/num1.png" width="30%" height="auto"><img src="imagenes/num2.png" width="30%" height="auto"><img src="imagenes/num3.png" width="30%" height="auto"><img src="imagenes/num4.png" width="30%" height="auto"><img src="imagenes/num6.png" width="30%" height="auto"><img src="imagenes/num7.png" width="30%" height="auto"><img src="imagenes/num8.png" width="30%" height="auto"><img src="imagenes/num9.png" width="30%" height="auto"><img src="imagenes/num10.png" width="30%" height="auto"><img src="imagenes/num5.png" width="30%" height="auto"> </div>
+    </div>
+   <div align="center">
+    <div style="width:50%; font-size:0.8em;">
+   <ul data-role="controlgroup" data-type="vertical"data-theme="a">
+    <li class="ui-first-child ui-last-child">
+    <a href="https://social.msdn.microsoft.com/Forums/es-ES/f4cf2f49-b8d7-4ec1-aee0-76163689f1a4/como-crear-un-exe-?forum=vcses"  target="_self" data-role="button">
+    <h2>¿Aún con dudas?</h2>
+    </a>
+    </li>
+   </ul>
+   </div>
+ </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>App10 ASVS</h4>
+   </div>
+  </div>
+ </body>
+</html>
